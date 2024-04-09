@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         # self.setWindowFlags(Qt.WindowType.WindowShadeButtonHint)
-        self.setWindowTitle('【小江科技】小伴数字人 beta版')
+        self.setWindowTitle('【小江科技】小伴智能体 beta版')
         # self.setFixedSize(16 * 80, 9 * 80) 
         self.setGeometry(0, 0, 16 * 70, 9 * 70)
         self.showMaximized()

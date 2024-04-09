@@ -93,7 +93,7 @@ def api_get_data():
 @__app.route('/api/start-live', methods=['post'])
 def api_start_live():
     # time.sleep(5)
-    ben_booter.start()
+    booter.start()
     time.sleep(1)
     wsa_server.get_web_instance().add_cmd({"liveState": 1})
     return '{"result":"successful"}'

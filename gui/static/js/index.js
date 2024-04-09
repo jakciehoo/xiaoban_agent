@@ -80,13 +80,13 @@ new Vue({
             class_list:[                
                 {
                 value: 'f2f',
-                label: '面对面对话'
+                label: '聊天对话模式'
             }, {
                 value: 'zhibo',
-                label: '直播'
+                label: '直播模式'
             }, {
                 value: 'daihuo',
-                label: '直播带货'
+                label: '直播带货模式'
             }],
             options: [{
                 value: '选项1',

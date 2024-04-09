@@ -14,7 +14,7 @@
         "zodiac": "\u86c7"
     },
     "interact": {
-        "QnA": "qa_demo.xlsx",
+        "QnA": "db/qa_demo.xlsx",
         "maxInteractTime": 15,
         "perception": {
             "chat": 10,

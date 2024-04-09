@@ -27,7 +27,7 @@ class Content_Db:
 
     #初始化
     def init_db(self):
-        conn = sqlite3.connect('ben.db')
+        conn = sqlite3.connect('db/ben.db')
         c = conn.cursor()
         c.execute('''CREATE TABLE IF NOT EXISTS T_Msg
             (id INTEGER PRIMARY KEY     autoincrement,
@@ -44,7 +44,7 @@ class Content_Db:
     #添加对话
     @synchronized
     def add_content(self,type,way,content):
-        conn = sqlite3.connect("ben.db")
+        conn = sqlite3.connect("db/ben.db")
         cur = conn.cursor()
         try:
             cur.execute("insert into T_Msg (type,way,content,createtime) values (?,?,?,?)",(type,way,content,int(time.time())))
@@ -61,7 +61,7 @@ class Content_Db:
     #获取对话内容
     @synchronized
     def get_list(self,way,order,limit):
-        conn = sqlite3.connect("ben.db")
+        conn = sqlite3.connect("db/ben.db")
         cur = conn.cursor()
         if(way == 'all'):
             cur.execute("select type,way,content,createtime,datetime(createtime, 'unixepoch', 'localtime') as timetext from T_Msg  order by id "+order+" limit ?",(limit,))

@@ -55,7 +55,7 @@ if __name__ == '__main__':
         ali_nls.start()
     flask_server.start()
     app = QApplication(sys.argv)
-    app.setWindowIcon(QtGui.QIcon('logo.jpg'))
+    app.setWindowIcon(QtGui.QIcon('images/logo.jpg'))
     win = MainWindow()
     win.show()
     app.exit(app.exec_())
