@@ -1,8 +1,8 @@
 
 <div align="center">
     <br>
-    <img src="images/icon.png" alt="ben">
-    <h1>小伴ben智能体</h1>
+    <img src="images/logo.png" alt="ben">
+    <h1>小伴智能体(代号：ben)</h1>
 	<h3>小伴智能体是一款可采用数字人、虚拟人、UE、Live2D、具身硬件为形象的智能体项目</h3>
 </div>
 
@@ -14,14 +14,14 @@
 
 
 
-![](images/chat.png)
+![](images/chat.jpg)
 
 助理版使用：语音沟通，语音和文字回复；文字沟通，文字回复;对接UE、live2d、xuniren，需关闭面板播放。
 
 
 ## **一、模块的组成**
 
-![](images/ben.png)
+![](images/ben.jpg)
 
 
 重要：ben（服务端）与数字人（客户端）的通讯接口: [`ws://127.0.0.1:10002`](ws://127.0.0.1:10002)（已接通）
